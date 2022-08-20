@@ -1,12 +1,12 @@
 public class Main {
-    public static void main(String[] args) {
-        int a = 5;
+    public static void main(String[] args) throws  Exception {
+        int a = 0;
 
-        if ((a < 2) || (a > 3)) {
-            System.out.println("yes");
-        } else {
-            System.out.println("no");
+        while (a < 10) {
+            a += 2;
+            System.out.println("seconds " + a);
+            Thread.sleep(1000);
         }
-        System.out.println(" Good bye!");
+        System.out.println("Time is over!!");
     }
 }
